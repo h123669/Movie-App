@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <div class="landing">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+    </div>
+    <section class="nav-bar position-fixed top-0">
+        <div class="nav-bars" id="sidebar">
+            <div class="div bg-dark vh-100  d-flex justify-content-between flex-column">
+                <div class="links d-flex flex-column">
+                    <a href="nowplaying.html" class="link m-2 text-decoration-none p-2 text-white">Now playing</a>
+                    <a href="popular.html" class="link m-2 text-decoration-none p-2 text-white">Popular</a>
+                    <a href="topRate.html" class="link m-2 text-decoration-none p-2 text-white" >Top Rated</a>
+                    <a href="trending.html" class="link m-2 text-decoration-none p-2 text-white" >Trending</a>
+                    <a href="upcoming.html" class="link m-2 text-decoration-none p-2 text-white">Upcoming</a>
+                    <a href="#contactUs" class="link m-2 text-decoration-none p-2 text-white">Contact Us</a>
+                </div>
+                <div class="text">
+                    <i class="fa-brands fa-facebook-f text-white m-2"></i>
+                    <i class="fa-brands fa-twitter text-white m-2"></i>
+                    <i class="fa-solid fa-globe text-white m-2"></i>
+                    <p class="text-white">
+                        Copyright © 2022 All Rights Reserved.<br/>Created by <span class="text-danger"><a href="http://" class="text-decoration-none text-danger">Housam Ramadan</a></span> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <span class="nav-icon position-fixed top-0 vh-100 bg-white d-flex flex-column align-items-center justify-content-between">
+            <img src="img/logo.png" alt="" class="w-50 m-3">
+            <div id="menu-toggle">
+                <i class="fa-solid fa-xmark" id="close-menu"></i>
+                <i class="fa-solid fa-bars" id="open-menu"></i>
+            </div>
+            <div class="icon d-flex flex-column">
+                <i class="fa-solid fa-globe m-1"></i>
+                <i class="fa-solid fa-share-nodes m-1"></i>
+            </div>
+        </span>
+    </section>
+    <section class="home">
+        <div class="search p-3">
+            <div class="container d-flex justify-content-center">
+                <input type="text" class="form-control bg-dark rounded-5 w-50 text-white" placeholder="Search" id="searchinput">
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-2 mt-5 " id="search">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-2" id="nowplaying">
+            </div>
+        </div>
+        <div class="contact p-3" id="contactUs">
+            <div class="container">
+                <div class="text">
+                    <h1 class="text-white">Contact Us</h1>
+                </div>
+                <div class="forms">
+                    <div class="text1 d-flex">
+                        <div class="w-50 m-1">
+                            <input type="text" class="form-control bg-dark text-white" id="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="w-50 m-1">
+                            <input type="email" class="form-control bg-dark text-white" id="email" placeholder="Enter Your Email">
+                        </div>
+                    </div>
+                    <div class="text2 d-flex ">
+                        <div class="w-50 m-1">
+                            <input type="number" class="form-control bg-dark text-white" id="phone" placeholder="Enter Your Phone">
+                        </div>
+                        <div class="w-50 m-1">
+                            <input type="number" class="form-control bg-dark text-white" id="age" placeholder="Enter Your Age">
+                        </div>
+                    </div>
+                    <div class="text3 d-flex ">
+                        <div class="w-50 m-1">
+                            <input type="password" class="form-control bg-dark text-white" id="password" placeholder="password">
+                        </div>
+                        <div class="w-50 m-1">
+                            <input type="password" class="form-control bg-dark text-white" id="repassword" placeholder="Repassword">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn bg-black border-0 text-white my-2" id="btn">submit</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
